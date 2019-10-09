@@ -1,0 +1,713 @@
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+.page {
+    min-width: 1100px;
+    max-width: 1600px;
+    margin: 0 auto;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+/*Блок header*/
+.header {
+    height: 100vh;
+    min-height: 600px;
+    max-height: 756px;
+    background-color: #F2F2F2;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+}
+
+.header__square-pic {
+    width: 568px;
+    height: 568px;
+}
+
+/*Блок header. настройки для блока лого*/
+.logo {
+    width: 183px;
+    height: 32px;
+    position: absolute;
+    background-image: url(../images/logo.svg);
+}
+
+/*Блок header. настройки для картинки лого*/
+.logo_header{
+    z-index: 2;
+    top: 30px;
+    left: 64px;
+}
+
+/*Блок header. настройки заголовка*/
+.header__title {
+    display: flex;
+    max-width: 730px;
+    margin-left: 64px;
+    align-items: center;
+    font-size: 102px;
+    line-height: 96px;
+    font-weight: bold;
+}
+
+/*Блок header. настойки подзаголовка*/
+.header__subtitle {
+    position: absolute;
+    z-index: 2;
+    width: 388px;
+    left: 64px;
+    bottom: 30px;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+/*Блок header. настойки ссылки*/
+.header__link {
+    color: #2F80ED;
+    text-decoration: none;
+}
+
+.header__link:hover {
+    opacity: 0.6;
+    transition: color 1s linear 0.5s;
+}
+
+/*Блок header. настойки опять двойка*/
+.header__main-illustration {
+    position: absolute;
+    height: 608px;
+    width: 765px;
+    right: 0;
+    bottom: 0;
+    background-image: url(../images/two_again.png);
+    background-size: cover;
+    z-index: 1;
+    
+}
+
+/*Блок header. настойки синей заливки*/
+.header__square-pic {
+    position: absolute;
+    height: 568px;
+    width: 568px;
+    top: 64px;
+    right: 0;
+    background-color: #2F80ED;
+}
+
+/*Блок header. поворот картинки с синей заливкой*/
+.header__square-pic_rotate {
+    transform: rotate(-15deg);
+    animation: rotation 20s linear infinite;
+}
+
+/*Блок description*/
+.two-columns {
+    display: flex;
+    justify-content: space-between;
+    min-height: 330px;
+    width: 80%;
+    margin: 100px auto;
+}
+
+/*Блок description. настойки первой колонки*/
+.two-columns__brief {
+    width: 175px;
+    font-size: 18px;
+    line-height: 1.2;
+    color: #2F80ED;
+}
+
+/*Блок description. настойки элемент текст колонки*/
+.two-columns__paragraph {
+    margin: 0;
+    font-size: 24px;
+    line-height: 34px;
+}
+
+/*Блок description. настойки второй колонки*/
+.two-columns__main-text {
+    min-width: 784px;
+    width: 80%;
+
+}
+
+/*Блок description. настойки только для блока span, где Вывод*/
+.two-columns__paragraph-item {
+
+}
+
+/*Блок description. настройки только для блока span, где Вывод*/
+.two-columns__paragraph_font-bold {
+    font-weight: bold;
+}
+
+/*Блок description. границы для блока со span*/
+.two-columns__paragraph_margin-30 {
+    margin: 30px 0px;
+}
+
+/*Блок technics. блок с табличкой*/
+.cards {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    margin: 0px auto;
+}
+
+/*Блок technics. вспомо*/
+.cards__inner-help-block {
+    min-width: 920px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.cards__item:nth-child(3n+0) {
+    margin-right: 0px;
+}
+
+/*Блок technics. элемент таблички*/
+.cards__item {
+    width: 250px;
+    min-height: 120px;
+    overflow: hidden;
+    margin-right: 100px;
+}
+
+/*Блок technics. элемент таблицы картинка*/
+.cards__image {
+    box-sizing: border-box;
+    border-radius: 50%;
+    width: 160px;
+    height: 160px;
+    margin: 60px 40px 43px 40px;
+    background-size: cover;
+    background-position: center;
+}
+
+/*Блок technics. элемент таблицы заголовок*/
+.cards__title {
+    margin: 0;
+    font-size: 24px;
+    text-align: center;
+    line-height: 1.15;
+    font-weight: bold;
+}
+
+/*Блок technics. элемент таблицы текст*/
+.cards__description {
+    margin: 16px 0px 0px 0px;
+    font-size: 18px;
+    text-align: center;
+    line-height: 23px;
+}
+
+/*Блок technics. элемент таблицы читерский пустой блок*/
+.cards__item_blank {
+
+}
+
+/*Блок video.*/
+.video {
+    margin-top: 100px;
+}
+
+/*Блок video. элемент контейнера*/
+.video__iframes {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    margin: 0px auto;
+}
+
+/*Блок video. вспомогательный контейнер*/
+.video__inner-help-block {
+    display: flex;
+    justify-content: center;
+    min-width: 920px;
+}
+
+/*Блок video. элемент ячейки таблицы*/
+.video__iframe {
+    width: 515px;
+    height: 316px;
+    margin-right: 20px;
+    transform: translateY(50px);
+}
+
+/*Блок video. модификатор для настроек размеров iframe*/
+.iframe__youtube_setup {
+    width: 515px;
+    height: 315px;
+}
+
+.iframe__youtube_setup:hover {
+    opacity: 0.6;
+    transition: color 1s linear 0.5s;
+}
+
+/*Блок video. делаем так, чтобы у всех четных элементов таблицы не было отступа справа*/
+.video__iframe:nth-child(even) {
+    margin-right: 0px;
+}
+
+/*Блок oakley.*/
+.oakley {
+    background-color: #F2F2F2;
+    padding-top: 160px;
+    padding-bottom: 80px;
+}
+
+.two-columns_oakley-margin-setup {
+    margin: 0 auto;
+}
+
+/*Блок digits*/
+.digits {
+    display: flex;
+    flex-direction: column;
+    margin: 100px auto;
+}
+
+/*Блок digits. заголовок*/
+.section-title {
+    display: flex;
+    justify-content: space-around;
+    margin: 0px auto;
+    width: 60%;
+    font-size: 60px;
+    line-height: 69px;
+    font-weight: bold;
+    z-index: 2;
+}
+
+/*Блок digits. подзаголовок*/
+.section-subtitle {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px auto 0px auto;
+    width: 60%;
+    text-align: center;
+    font-size: 24px;
+    line-height: 34px;
+    font-weight: normal;
+}
+
+/*Блок digits. настройки для таблицы*/
+.table {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 1100px;
+    min-height: 230px;
+    margin: 0px auto;
+    z-index: 2;
+}
+
+/*Блок digits. настройки для ячейки таблицы*/
+.table__cell {
+    width: 250px;
+    min-height: 120px;
+    margin: 60px 0px 0px 0px;
+}
+
+/*Блок digits. настройки для заголовков внутри таблицы*/
+.table__heading {
+    margin: 0px auto 20px 0px;
+    font-size: 24px;
+    line-height: 1.15;
+    font-weight: bold;
+}
+
+/*Блок digits. настройки для текста внутри таблицы*/
+.table__text {
+    margin: 0px;
+    font-size: 18px;
+    line-height: 1.2;
+}
+
+/*Блок digits. настройки для границ элементов с текстом*/
+.table__text_margin-20 {
+    margin: 20px auto 0px auto;
+}
+
+/*Блок feinman*/
+.feinman {
+    display: flex;
+    position: relative;
+    min-height: 800px;
+    padding-top: 20px;
+    background-color: #F2F2F2;
+}
+
+/*Блок feinman. настройки положения картинки*/
+.feinman__picture {
+    position: absolute;
+    height: 637px;
+    width: 867px;
+    bottom: 0;
+    left: 0;
+    background-size: cover;
+    background-position: center;
+}
+
+/*Блок feinman. настройки блока заголовка*/
+.feinman__title {
+    display: flex;
+    align-items: flex-start;
+    width: 648px;
+    height: 250px;
+    margin: 0px auto;
+    z-index: 1;
+    text-align: center;
+    font-size: 120px;
+    line-height: 1.15;
+    font-weight: bold;
+}
+
+/*Блок feinman. настройки блока подзаголовка*/
+.feinman__subtitle {
+    position: absolute;
+    align-self: center;
+    top: 35%;
+    left: 39%;
+    z-index: 1;
+    margin-top: 70px;
+    font-size: 36px;
+    line-height: 51px;
+}
+
+/*Блок feinman. настройки блока ссылки со стрелкой*/
+.feinman__link {
+    position: absolute;
+    align-self: flex-end;
+    top: 44%;
+    right: 48px;
+    font-size: 36px;
+    line-height: 51px;
+    color: #000000;
+    text-decoration-line: none;
+}
+
+.feinman__link:hover {
+    opacity: 0.6;
+    transition: color 1s linear 0.5s;
+}
+
+/*Блок khan*/
+.khan {
+    padding-top: 105px;
+
+    background-color: #F2F2F2;
+}
+
+/*Блок khan. Элемент контейнер*/
+.khan__container {
+    display: flex;
+    flex-direction: column;
+    margin: 0px auto;
+    width: 80%;
+}
+
+/*Блок khan. Элемент заголовок с именем автора*/
+.khan__author {
+    margin: 0;
+    text-align: left;
+    font-size: 30px;
+    line-height: 42px;
+    font-weight: normal;
+}
+
+/*Блок khan. Элемент заголовок с названием*/
+.khan__title {
+    margin: 0;
+    font-size: 60px;
+    line-height: 1.15;
+    font-weight: bold;
+}
+
+/*Блок khan. Элемент текст с цитатой*/
+.khan__quote {
+    width: 790px;
+    margin: 50px 0px 0px 0px;
+    font-size: 24px;
+    line-height: 34px;
+}
+
+/*Блок khan. Элемент текст с именем автора*/
+.khan__quote-author {
+    margin: 36px 0px 0px 0px;
+    font-size: 24px;
+    line-height: 1.15;
+    font-weight: bold;
+}
+
+/*Блок khan. Элемент текст с occupation*/
+.khan__quote-author-subline {
+    margin: 10px 0px 0px 0px;
+    font-size: 24px;
+    line-height: 1.15;
+}
+
+/*Блок khan. Элемент контейнер с картинкой и текстом*/
+.khan__book-container {
+    display: flex;
+    justify-content: left;
+    width: 80%;
+    margin: 68px 0px 0px 0px;
+}
+
+/*Блок khan. Элемент картинка*/
+.khan__book-pic {
+}
+
+/*Блок khan. Элемент вспомогательный контейнер*/
+.khan__book-pic_inner-help-container {
+    width: 620px;
+    height: 608px;
+    margin: 0px 20px 0px 0px;
+    overflow: hidden;
+}
+
+/*Блок khan. Элемент ссылка купить*/
+.khan__buy-link {
+    font-size: 30px;
+    line-height: 42px;
+    color: #2F80ED;
+    text-decoration: none;
+}
+
+.khan__buy-link:hover {
+    opacity: 0.6;
+    transition: color 1s linear 0.5s;
+}
+
+/*Блок kaufman*/
+.kaufman {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    padding-top: 90px;
+    padding-bottom: 90px;
+    overflow: hidden;
+    background-color: #1F1F1F;
+    overflow: hidden;
+}
+
+/*Блок kaufman. настройки для текста заголовка*/
+.section-title_color-white {
+    color: white;
+}
+
+/*Блок kaufman. настройки для текста подзаголовка*/
+.section-subtitle_color-white {
+    color: white;
+}
+
+/*Блок kaufman. настройки для таблицы*/
+.table_color-white {
+    color: white;
+}
+
+/* и элемента с модификатором */
+.table__cell_kaufman {
+    width: 200px;
+    min-height: 110px;
+    margin-right: 0;
+    margin-top: 80px;
+    color: white;
+}
+
+/*Блок kaufman. настройки для текста заголовка внутри таблицы*/
+.table__heading_color-white {
+    color: white;
+}
+
+/*Блок kaufman. настройки для текста внутри таблицы*/
+.table__text_color-white {
+    color: white;
+}
+
+/*Блок kaufman. Картинка с треугольником*/
+.kaufman__triangle {
+    position: absolute;
+    width: 877px;
+    height: 877px;
+    margin: 0px;
+    top: -5px;
+    right: -215px;
+    background-image: url(../images/triangle.svg);
+    background-size: cover;
+    z-index: 1;
+    animation: rotation 20s linear infinite;
+}
+
+/*Блок resources*/
+.resources {
+    margin: 100px auto 217px auto;
+}
+
+
+/*Блок resources. элемент контейнер для лого*/
+.resources__logo-zone {
+    display: flex;
+    justify-content: center;
+    width: 1100px;
+    margin: 80px auto 0px auto;
+}
+
+.resources__logo-link {
+    margin: 0;
+}
+
+.resources__logo-link:hover {
+    opacity: 0.6;
+    transition: color 1s linear 0.5s;
+}
+
+/*Блок resources. элемент для лого*/
+.resources__logo {
+    width: 270px;
+    height: 38px;
+}
+
+/*Блок footer*/
+.footer {
+    display: flex;
+    flex-direction: column;
+    background-color: #1F1F1F;
+    height: 280px;
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+
+/*Блок footer. настройки для колонок*/
+.footer__columns {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    width: 90%;
+    height: 280px;
+    margin: 0px auto;
+}
+
+/*Блок footer. настройки для колонки*/
+.footer__column {
+
+}
+
+/*Блок footer. настройки для копирайт*/
+.footer__column_copyright {
+    flex-basis: 711px;
+}
+
+/*Блок footer. настройки для элемента лого*/
+.logo_footer {
+    top: 0;
+    left: 0;
+    background-image: url(../images/logo_white.svg);
+}
+
+/*Блок footer. настройки для элемента автор*/
+.footer__author {
+    position: absolute;
+    width: 200px;
+    height: 20px;
+    left: 0;
+    bottom: 18px;
+    margin: 0px;
+    font-size: 18px;
+    line-height: 25px;
+    color: white;
+}
+
+/*Блок footer. настройки для колонки инфо*/
+.footer__column_info {
+    width: 200px;
+    min-height: 110px;
+    color: white;
+}
+
+/*Блок footer. настройки для заголовка колонки инфо*/
+.footer__column-heading {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: bold;
+    /*text-align: center;*/
+    color: white;
+}
+
+/*Блок footer. настройки для элемента ссылок в инфо*/
+.footer__column-links {
+    margin-top: 20px;
+    margin-bottom: 16px;
+}
+
+/*Блок footer. настройки для ссылок в инфо*/
+.footer__column-item {
+    margin: 0px;
+}
+
+/*Блок footer. настройки для второй ссылки в инфо*/
+.footer__column-link_margin {
+    margin: 1em 0;
+}
+
+/*Блок footer. настройки для текста ссылок колонки инфо*/
+.footer__column-link_white {
+    color: white;
+    text-decoration-line: none;
+}
+
+.footer__column-link_white:hover {
+    opacity: 0.6;
+    transition: color 1s linear 0.5s;
+}
+
+/*Блок footer. настройки для иконок колонки соцсети*/
+.footer__social-icons {
+    margin-top: 20px;
+    margin-bottom: 16px;
+}
+
+/*Блок footer. настройки для соц сетей*/
+.footer__social-item {
+    margin: 0px;
+}
+
+/*Блок footer. настройки для второй ссылки в соц сетей*/
+.footer__social-icon_margin {
+    margin: 1em 0;
+}
+
+/*Блок footer. настройки для текста в элементе соц сети*/
+.footer__social-icon_white {
+    margin: 0;
+    color: white;
+    text-decoration-line: none;
+}
+
+.footer__social-icon_white:hover {
+    opacity: 0.6;
+    transition: color 1s linear 0.5s;
+}
+
+.footer__social-icon_img {
+    width: 16px;
+    height: 16px;
+    margin: 0;
+}
+
+.footer__social-icon_img:hover {
+    opacity: 0.6;
+    transition: color 1s linear 0.5s;
+}
